@@ -1,10 +1,10 @@
 import random
 import extras
 
-special_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+special_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
 
-special_dict ={
+special_dict = {
     '1': ['Dagger of Halflings',
           'For a non-halfling, it works as a magical dagger. For a halfling, it counts as a sword, and gives +10 to'
           ' WS.', 'AN', '47'],
@@ -26,7 +26,15 @@ special_dict ={
     '9': ['All-Seeing Mirror',
           'These come in pairs, each seeing the reflection on the other through unlimited distances by land, or up to'
           ' 500 miles of sea.', 'CORE1', '183'],
-    '10': ['Enchanted Rope', 'A magical rope that obeys the commands of its owner. See manual.', 'CORE1', '185']
+    '10': ['Enchanted Rope', 'A magical rope that obeys the commands of its owner. See manual.', 'CORE1', '185'],
+    '11': ['Golden Death Mask', 'Gives a bonus of +10 to Command and Intimidate, as well as +10 WP.', 'LLL', '93'],
+    '12': ['Blades of Honourable Demise', 'Gives a +20 to WS. Parrying. If it wounds, the victim loses an additional'
+                                          ' wound each round until they pass a T -10 test,', 'LLL', '94'],
+    '13': ['Dagger of Bound Souls', 'If it inflicts at least 1 wound, target suffers 5 more wounds, deals extra wounds,'
+                                    ' pierces magical protection. See manual.', 'LLL', '96'],
+    '14': ['Gauntlet of Hraklonesh', "S +10, T +10, can't be removed. Each week, make a T -10 check or gain a mutation."
+                                     " See manual.", 'LLL', '96']
+
 }
 
 

@@ -34,14 +34,14 @@ melee_weapon_enchantment_list = ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1
                                  '1', '1', '1', '1', '1', '1', '1', '1', '2', '2', '2', '2', '2', '2', '2', '2', '2',
                                  '2', '2', '2', '2', '2', '3', '3', '3', '3', '3', '3', '3', '3', '3', '4', '4', '4',
                                  '4', '4', '4', '4', '4', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14',
-                                 '14', '15', '15', '16', '16', '17', '18', '19', '20', '21', '21', '22', '22','23',
+                                 '14', '15', '15', '16', '16', '17', '18', '19', '20', '21', '21', '22', '22', '23',
                                  '23', '24', '25', '25', '26', '26']
 
 range_weapon_enchantment_list = ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1',
                                  '1', '1', '1', '1', '1', '1', '1', '1', '2', '2', '2', '2', '2', '2', '2', '2', '2',
                                  '2', '2', '2', '2', '2', '3', '3', '3', '3', '3', '3', '3', '3', '3', '4', '4', '4',
                                  '4', '4', '4', '4', '4', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '15',
-                                 '15', '16', '16', '17', '19', '20', '22', '22','23', '23', '25', '25', '26', '26']
+                                 '15', '16', '16', '17', '19', '20', '22', '22', '23', '23', '25', '25', '26', '26']
 
 melee_weapon_list = ['1', '2', '2', '2', '3', '4', '5', '6', '7', '7', '8', '8', '9', '10', '11', '12', '13', '14',
                      '15', '15', '15', '16', '17', '18', '18', '18', '18', '18', '19', '19', '19', '19', '19']
@@ -49,46 +49,46 @@ melee_weapon_list = ['1', '2', '2', '2', '3', '4', '5', '6', '7', '7', '8', '8',
 range_weapon_list = ['1', '2', '2', '3', '4', '5', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16',
                      '17']
 
-melee_weapon_dict ={
-    '1': ['Buckler' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '2': ['Dagger' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '3': ['Cavalry Spear' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '4': ['Flail' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '5': ['Foil' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '6': ['Knuckle-duster ' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '7': ['Great Sword' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '8': ['Great Axe' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '9': ['Halberd' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '10': ['Lance' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '11': ['Main Gauche ' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '12': ['Morning Star ' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '13': ['Quarterstaff' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '14': ['Rapier ' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '15': ['Shield ' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '16': ['Spear ' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '17': ['Sword-breaker ' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '18': ['Hand Axe' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '19': ['Long Sword' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188']
+melee_weapon_dict = {
+    '1': ['Buckler', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '2': ['Dagger', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '3': ['Cavalry Spear', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '4': ['Flail', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '5': ['Foil', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '6': ['Knuckle-duster ', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '7': ['Great Sword', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '8': ['Great Axe', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '9': ['Halberd', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '10': ['Lance', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '11': ['Main Gauche ', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '12': ['Morning Star ', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '13': ['Quarterstaff', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '14': ['Rapier ', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '15': ['Shield ', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '16': ['Spear ', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '17': ['Sword-breaker ', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '18': ['Hand Axe', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '19': ['Long Sword', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188']
 }
 
-range_weapon_dict ={
-    '1': ['Blunderbuss' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '2': ['Pistol' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '3': ['Repeater Pistol' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '4': ['Bola' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '5': ['Crossbow' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '6': ['Crossbow Pistol ' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '7': ['Javelin ' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '8': ['Lasso' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '9': ['Net' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '10': ['Repeater Crossbow' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '11': ['Sling ' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '12': ['Staff Sling' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '13': ['Throwing Axe' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '14': ['Throwing Hammer ' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '15': ['Throwing Dagger' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '16': ['Throwing Star' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '17': ['Whip' ,'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188']
+range_weapon_dict = {
+    '1': ['Blunderbuss', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '2': ['Pistol', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '3': ['Repeater Pistol', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '4': ['Bola', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '5': ['Crossbow', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '6': ['Crossbow Pistol ', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '7': ['Javelin ', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '8': ['Lasso', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '9': ['Net', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '10': ['Repeater Crossbow', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '11': ['Sling ', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '12': ['Staff Sling', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '13': ['Throwing Axe', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '14': ['Throwing Hammer ', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '15': ['Throwing Dagger', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '16': ['Throwing Star', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '17': ['Whip', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188']
 }
 
 
@@ -98,7 +98,7 @@ range_weapon_dict ={
 # entry.
 
 
-def pick_weapon():
+def pick_weapon(is_rune = False, is_chaos = False):
     amount_properties_roll = random.randint(1, 100)  # TEST
 
     if amount_properties_roll <= 20:
@@ -263,14 +263,11 @@ def pick_weapon():
                 name += '2 Attacks per round automatically parried'
             name += '), '
         else:
-            name += weapon_enchantment_dict[enchantment]+', ' # test
+            name += weapon_enchantment_dict[enchantment]+', '
     name = name[:-2]
     name += ')'
-
-
-    final_object = [object_id,name,description, source,page]
+    final_object = [object_id,name,description, source, page]
     return final_object
-
 
 
 print(pick_weapon())

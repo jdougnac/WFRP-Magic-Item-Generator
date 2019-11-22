@@ -34,7 +34,7 @@ ring_dict = {
 # entry.
 
 
-def pick_ring(is_rune):
+def pick_ring(is_rune=False):
     choice = str(random.choice(ring_list))
     chosen_object = ring_dict[choice]    
     object_id = choice

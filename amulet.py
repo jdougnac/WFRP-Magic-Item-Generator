@@ -30,7 +30,7 @@ amulet_dict ={
 #sub-classes or specifics
 #within a given magic item
 
-def pick_amulet(is_rune):
+def pick_amulet(is_rune=False):
     choice=str(random.choice(amulet_list))
     chosen_object = amulet_dict[choice]    
     object_id=choice

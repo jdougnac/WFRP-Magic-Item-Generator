@@ -35,22 +35,23 @@ head_enchantments = ['Berserk', 'Breathe Underwater', 'Flight', 'Flight', 'Hatre
                      'Characteristic Gain', 'Characteristic Gain', 'Protection', 'Protection', 'Protection', 
                      'Protection', 'Protection', 'Protection', 'Protection', 'Protection', 'Protection', 'Regeneration',
                      'Regeneration', 'Wizardry', 'Wizardry', 'Protection', 'Protection', 'Protection', 'Protection',
-                     'Protection', 'Protection']
+                     'Protection', 'Protection', 'Corrosion', 'Woodbane']
 
 bracer_enchantments = ['Characteristic Gain', 'Characteristic Gain', 'Characteristic Gain', 'Characteristic Gain',
                        'Characteristic Gain', 'Characteristic Gain', 'Characteristic Gain', 'Characteristic Gain',
                        'Characteristic Gain', 'Area Protection', 'Area Protection', 'Area Protection',
                        'Area Protection', 'Attack Protection', 'Attack Protection', 'Binding', 'Magical Gloves',
-                       'Missile Protection', 'Deflection', 'Deflection', 'Wizardry']
+                       'Missile Protection', 'Deflection', 'Deflection', 'Wizardry', 'Corrosion', 'Woodbane']
 
 legging_enchantments = ['Characteristic Gain', 'Characteristic Gain', 'Characteristic Gain', 'Characteristic Gain',
                         'Characteristic Gain', 'Characteristic Gain', 'Characteristic Gain', 'Characteristic Gain',
                         'Area Protection', 'Area Protection', 'Area Protection', 'Area Protection', 'Attack Protection',
-                        'Attack Protection', 'Dodging', 'Kicking', 'Leaping', 'Magical Boots', 'Movement', 'Wizardry']
+                        'Attack Protection', 'Dodging', 'Kicking', 'Leaping', 'Magical Boots', 'Movement', 'Wizardry',
+                        'Corrosion', 'Woodbane']
 
 shield_enchantments = ['Charging', 'Invisibility', 'Light', 'Magic Missile Protection', 'Missile Protection',
                        'Missile Reflection', 'Area Protection', 'Spell Absorption', 'Spell Reflection',
-                       'Weapon Breaker']
+                       'Weapon Breaker', 'Corrosion', 'Woodbane']
 
 # this function picks a random object
 # from the list, then takes the information from
@@ -144,7 +145,7 @@ def pick_enchantments(amount_enchantments, enchantment_list):
     return object_enchantments
 
 
-def pick_armour(is_rune, is_chaos):
+def pick_armour(is_rune = False, is_chaos = False):
     choice = str(random.choice(armour_list))
     chosen_object = armour_dict[choice]    
     object_id = choice
