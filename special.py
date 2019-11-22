@@ -83,29 +83,3 @@ def pick_special():
 
     final_object = [object_id, name, description, source, page]
     return final_object
-
-
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())
-print(pick_special())

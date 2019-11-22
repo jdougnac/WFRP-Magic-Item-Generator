@@ -47,7 +47,7 @@ arrow_dict = {
                                 "effect.", 'Apo2', '91'],
     '25': ['Arrow of Piercing', 'Ignores non-magical armour and shields. See manual.', 'Apo2', '90'],
     '26': ['Arrow of Rightful Banishment', 'Forces target of the associated creature type to make an instability check'
-                                            ' at -3.', 'Apo', '90']
+           ' at -3.', 'Apo', '90']
 
 }
 
@@ -383,23 +383,3 @@ def pick_arrow():
         name += ')'
     final_object = [object_id, name, description, source, page]
     return final_object
-
-
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())
-print (pick_arrow())

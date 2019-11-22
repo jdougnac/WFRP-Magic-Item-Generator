@@ -6,23 +6,27 @@ ring_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 ring_dict = {
 
-    '1': ['Amulet Ring' ,'The ring has exactly the same effect as the magical amulet of the same name.', 'CORE1',
+    '1': ['Amulet Ring', 'The ring has exactly the same effect as the magical amulet of the same name.', 'CORE1',
           '187'],
-    '2': ['Energy Ring' ,
+    '2': ['Energy Ring',
           'Works as a Jewel of Energy. Contains 2D6 Magic Points, which can be used once per day by any spellcaster.',
           'CORE1', '185'],
-    '3': ['Fortitude Ring' ,'Gives the wearer a +10 bonus on all WP and Cl tests.', 'AN', '46'],
+    '3': ['Fortitude Ring', 'Gives the wearer a +10 bonus on all WP and Cl tests.', 'AN', '46'],
     '4': ['Multiple Spell Ring', 'PENDING', 'CORE1', '187'],
     '5': ['Multiple Warding Ring', 'PENDING', 'CORE1', '187'],
-    '6': ['Ring of Protection' ,
-          'The wearer takes half damage from all attacks from the designated monsters, and has a +10 bonus to all tests against their spells and special abilities.',
+    '6': ['Ring of Protection',
+          'The wearer takes half damage from all attacks from the designated monsters, and has a +10 bonus to all tests'
+          ' against their spells and special abilities.',
           'CORE1', '187'],
     '7': ['Ring of Elvenkind',
-          'Gives the wearer Night Vision up to 30 yards, a +5 Initiative bonus, and +10 to Fellowship tests against elves.',
+          'Gives the wearer Night Vision up to 30 yards, a +5 Initiative bonus, and +10 to Fellowship tests against'
+          ' elves.',
           'AN', '46'],
     '8': ['Spell Ring', 'PENDING', 'CORE1', '187'],
     '9': ['Striking Ring',
-          'Once per day, for a full turn, and one at a time, the wearer may gain the benefits of Strike Mighty Blow, Strike to Injure or Strike to Stun. If they already have the talent, the bonuses are not doubled.', 'AN', '46'],
+          'Once per day, for a full turn, and one at a time, the wearer may gain the benefits of Strike Mighty Blow,'
+          ' Strike to Injure or Strike to Stun. If they already have the talent, the bonuses are not doubled.',
+          'AN', '46'],
     '10': ['Ring of Warding', 'PENDING', 'CORE1', '187'],
 
 }

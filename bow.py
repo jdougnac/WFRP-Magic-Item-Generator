@@ -129,39 +129,9 @@ def pick_bow():
                         name += 'ERROR'
                     name += ', '
             name = name[:-2]
-            name +=')'
+            name += ')'
     description = chosen_object[1]
     source = chosen_object[2]
     page = chosen_object[3]
     final_object = [object_id, name, description, source, page]
     return final_object
-
-
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())
-print(pick_bow())

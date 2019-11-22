@@ -62,5 +62,6 @@ def print_many_items(amount):
     for item in range(0, amount):
         print(pick_random_object())
 
-print_many_items(30)
+
+print_many_items(5)
 

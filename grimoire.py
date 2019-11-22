@@ -10,5 +10,3 @@ def pick_grimoire():
     final_object = ['0', name, 'A grimoire containing spells', 'CORE1', '185']
     return final_object
 
-
-print (pick_grimoire())

@@ -466,25 +466,3 @@ def pick_armour(is_rune = False, is_chaos = False):
     name = name[:-2]
     final_object = [object_id, name, description, source, page]
     return final_object
-
-
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))
-print(pick_armour(False, False))

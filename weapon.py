@@ -119,7 +119,7 @@ def pick_weapon(is_rune = False, is_chaos = False):
         chosen_object = melee_weapon_dict[choice]
         enchantment_list = melee_weapon_enchantment_list
     elif weapon_type_roll <= 100:
-        choice=str(random.choice(range_weapon_list))
+        choice = str(random.choice(range_weapon_list))
         chosen_object = range_weapon_dict[choice]
         enchantment_list = range_weapon_enchantment_list
     object_id = choice
@@ -141,7 +141,7 @@ def pick_weapon(is_rune = False, is_chaos = False):
     for enchantment in object_enchantments:
         if enchantment == '1':
             damage_roll = random.randint(1, 100)
-            name += 'Additional Damage (' #addi damage
+            name += 'Additional Damage ('
             if damage_roll <= 50:
                 name += '+1), '
             elif damage_roll <= 75:
@@ -266,26 +266,5 @@ def pick_weapon(is_rune = False, is_chaos = False):
             name += weapon_enchantment_dict[enchantment]+', '
     name = name[:-2]
     name += ')'
-    final_object = [object_id,name,description, source, page]
+    final_object = [object_id, name, description, source, page]
     return final_object
-
-
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
-print(pick_weapon())
