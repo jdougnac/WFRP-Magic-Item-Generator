@@ -7,8 +7,8 @@ glove_dict = {
     '2': ['Gloves of the Cobra', 'On an unarmed impact against skin, injects venom into the victim. See manual.', 'AN',
           '44'],
     '3': ['Gloves of Nimbleness',
-          'Give a +10 bonus to Dexterity, and proficiency in Lockpicking and Picking Pockets. Needs to be adapted to'
-          ' 2E. See manual.',
+          'Give a +10 bonus to Agi, as well as proficiency in Sleight of Hand and Pick Lock, or a +10 if the wearer'
+          ' has them.',
           'AN', '44']
 }
 

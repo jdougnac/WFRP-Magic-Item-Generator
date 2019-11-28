@@ -11,7 +11,7 @@ amulet_dict = {
                                       " deadly criticals.", 'CORE1', '184'],
     '4': ['Amulet of Coal', 'Can contain up to 3 fireball spells. It recharges by casting Fireball at it.', 'CORE1',
           '184'],
-    '5': ['Amulet of Iron', 'This needs GM input to be adapted to 2nd edition. See manual.', 'CORE1', '184'],
+    '5': ['Amulet of Iron', 'Gives a bonus to all tests to resist magic.', 'CORE1', '184'],
     '6': ['Amulet of Righteous Silver', 'Gives immunity to psychological effects caused by undead.', 'CORE1', '184'],
     '7': ['Amulet of Law', 'Gives bonuses to resist Chaotic Magic and pyschological effects from creatures of Chaos.'
                            ' See manual.', 'AN', '42'],
