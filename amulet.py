@@ -1,7 +1,7 @@
 import random
 
 
-amulet_list = [1, 1, 2, 3, 3, 4, 5, 6, 7, 8]
+amulet_list = [1, 1, 2, 3, 3, 4, 5, 6, 7, 8, 9]
 
 amulet_dict = {
     '1': ['Amulet of Thrice-Blessed Copper', 'One less wounds from impacts with a non-magical weapon, +20 poison'
@@ -16,7 +16,9 @@ amulet_dict = {
     '7': ['Amulet of Law', 'Gives bonuses to resist Chaotic Magic and pyschological effects from creatures of Chaos.'
                            ' See manual.', 'AN', '42'],
     '8': ['Amulet of Watchfulness', 'If a creature wants to harm the bearer while they sleep, they wake up. See'
-                                    ' manual.', 'AN', '42']
+                                    ' manual.', 'AN', '42'],
+    '9': ['Amulet of Fire', 'Has a 50% chance to dispel the first spell cast at the wearer each round.', 'ROS1', '160']
+
 }
 
 

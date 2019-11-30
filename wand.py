@@ -2,7 +2,6 @@ import random
 
 wand_list = [1, 2, 3, 4, 4, 5, 5, 6, 6, 7]
 
-
 wand_dict = {
     '1': ['Blackwand', 'Once per day, the bearer can cast shadowcloak (ROS 2 p. 164), affecting allies up to'
                        '4 yards away. Plus, once per day can discharge 1d6 projectiles coated in Manbane. See'
@@ -21,7 +20,11 @@ wand_dict = {
     '6': ['Wand of Jet', 'When casting a spell, the user may make a WP test. If successful, its TN is reduced'
                          'by 1d4.', 'CORE1', '188'],
     '7': ['Wand of Onyx', 'Works as a Jewel of Energy. Once per day, can add the amount in parentheses to a'
-                          ' spellcasting roll, even after rolling the dice.', 'CORE1', '188']
+                          ' spellcasting roll, even after rolling the dice.', 'CORE1', '188'],
+    '8': ['Rod of Power',
+          'The bearer can store a spell in it by casting it. It can later be cast without needing a roll.'
+          ' The spells cannot be accessed by a different spellcaster. Stores up to three spells', 'ROS1', '160'],
+    '9': ['Staff of Damnation', 'Empowers Undead. See manual.', 'ROS1', '160']
 
 }
 
@@ -34,20 +37,22 @@ wand_dict = {
 
 def pick_wand():
     choice = str(random.choice(wand_list))
-    chosen_object = wand_dict[choice]    
+    chosen_object = wand_dict[choice]
     object_id = choice
     name = chosen_object[0]
     description = chosen_object[1]
     source = chosen_object[2]
     page = chosen_object[3]
     if object_id == '2':
-        wand_capacity = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6)
+        wand_capacity = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6) + random.randint(1,
+                                                                                                            6) + random.randint(
+            1, 6) + random.randint(1, 6)
         current_usage = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6)
         if current_usage > wand_capacity:
             current_usage = wand_capacity
         name += ' (capacity ' + str(wand_capacity) + ' points, ' + str(current_usage) + ' points are already in use)'
     elif object_id == '7':
         bonus = str(random.randint(1, 6))
-        name += ' ('+bonus+')'
+        name += ' (' + bonus + ')'
     final_object = [object_id, name, description, source, page]
     return final_object

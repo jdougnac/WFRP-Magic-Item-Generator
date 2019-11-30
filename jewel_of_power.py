@@ -6,7 +6,11 @@ jewel_dict = {
     '2': ['Multiple Spell Jewel', 'A spellcaster can cast each spell contained within once a day, without rolling.',
           'CORE1', '185'],
     '3': ['Energy Jewel', 'Once per day, can add the amount in parentheses to a spellcasting roll, even'
-          'after rolling the dice.', 'CORE1', '185']
+                          'after rolling the dice.', 'CORE1', '185'],
+    '4': ['Heart of Woe',
+          'When the bearer is killed, it shatters, hitting everyone in a radius of the Wounds of the bearer, of a S'
+          ' equal to the SB of the bearer + 1d6',
+          'ROS1', '160'],
 
 }
 
@@ -30,7 +34,7 @@ def pick_jewel():
     if object_id == '1':
         name += ' (' + spell.pick_spell() + ')'
     elif object_id == '2':
-        number_of_spells = random.randint(1, 3)+1
+        number_of_spells = random.randint(1, 3) + 1
         for power in range(0, number_of_spells):
             name += ' (' + spell.pick_spell() + '),'
         name = name[:-1]
