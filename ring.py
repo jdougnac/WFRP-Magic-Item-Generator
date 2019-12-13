@@ -1,6 +1,7 @@
 import random
 import amulet
 import spell
+import rune
 
 ring_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -44,7 +45,10 @@ ring_dict = {
 # entry.
 
 
-def pick_ring(is_rune=False):
+def pick_ring():
+    item_type = random.randint(1, 100)
+    if item_type > 89:
+        return rune.pick_talisman('Ring')
     choice = str(random.choice(ring_list))
     chosen_object = ring_dict[choice]    
     object_id = choice
@@ -53,8 +57,11 @@ def pick_ring(is_rune=False):
     source = chosen_object[2]
     page = chosen_object[3]
     if object_id == '1':        
-        ring = amulet.pick_amulet(is_rune)
-        name = 'Ring' + ring[1][6:]
+        ring = amulet.pick_amulet()
+        if ring[1][0:11] == 'Rune Amulet':
+            name = 'Ring' + ring[1][11:]
+        else:
+            name = 'Ring' + ring[1][6:]
         description = 'This ring works exactly as the Amulet of the same name. ' + ring[2]
         source = ring[3]
         page = ring[4]

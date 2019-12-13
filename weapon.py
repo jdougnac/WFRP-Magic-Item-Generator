@@ -1,5 +1,6 @@
 import random
-
+import chaos
+import rune
 
 weapon_enchantment_dict = {
     '1': 'Additional Damage',
@@ -44,7 +45,8 @@ range_weapon_enchantment_list = ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1
                                  '15', '16', '16', '17', '19', '20', '22', '22', '23', '23', '25', '25', '26', '26']
 
 melee_weapon_list = ['1', '2', '2', '2', '3', '4', '5', '6', '7', '7', '8', '8', '9', '10', '11', '12', '13', '14',
-                     '15', '15', '15', '16', '17', '18', '18', '18', '18', '18', '19', '19', '19', '19', '19']
+                     '15', '15', '15', '16', '17', '18', '18', '18', '18', '18', '19', '19', '19', '19', '19', '20',
+                     '20', '20', '21', '21']
 
 range_weapon_list = ['1', '2', '2', '3', '4', '5', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16',
                      '17']
@@ -68,7 +70,9 @@ melee_weapon_dict = {
     '16': ['Spear ', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
     '17': ['Sword-breaker ', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
     '18': ['Hand Axe', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
-    '19': ['Long Sword', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188']
+    '19': ['Long Sword', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '20': ['One-Handed Hammer', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
+    '21': ['Great Hammer', 'Enchanted weapon. See manual for a description of its properties.', 'CORE1', '188'],
 }
 
 range_weapon_dict = {
@@ -98,9 +102,15 @@ range_weapon_dict = {
 # entry.
 
 
-def pick_weapon(is_rune = False, is_chaos = False):
-    amount_properties_roll = random.randint(1, 100)  # TEST
+def pick_weapon():
+    type_of_magic_weapon = random.randint(1, 100)
+    if type_of_magic_weapon > 84 and type_of_magic_weapon < 96:
+        return rune.pick_weapon()
+    if type_of_magic_weapon > 95:
+        weapon = chaos.pick_weapon_chaos()
+        return weapon
 
+    amount_properties_roll = random.randint(1, 100)
     if amount_properties_roll <= 20:
         amount_properties = 0
     elif amount_properties_roll <= 70:

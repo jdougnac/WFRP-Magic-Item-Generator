@@ -86,7 +86,7 @@ def pick_arrow():
         elif roll <= 35:
             name = 'Arrow of Banefulness: Undead and Ethereal Creatures'
         elif roll <= 45:
-            name = 'Arrow of Banefulness: Creatures of Chaos (including Chaos warriors, etc.'
+            name = 'Arrow of Banefulness: Creatures of Chaos (including Chaos warriors, etc.)'
         elif roll <= 50:
             name = 'Arrow of Banefulness: Dragons, Wyverns, and Jabberwocks'
         elif roll <= 55:
@@ -205,13 +205,13 @@ def pick_arrow():
         elif summon_roll <= 24:
             name += 'Lord of Change'
         elif summon_roll <= 34:
-            name += 'Air Elemental, size ', str(random.randint(1, 6)+4)
+            name += 'Air Elemental, size ' + str(random.randint(1, 6)+4)
         elif summon_roll <= 44:
-            name += 'Earth Elemental, size ', str(random.randint(1, 6)+4)
+            name += 'Earth Elemental, size ' + str(random.randint(1, 6)+4)
         elif summon_roll <= 54:
-            name += 'Fire Elemental, size ', str(random.randint(1, 6)+4)
+            name += 'Fire Elemental, size ' + str(random.randint(1, 6)+4)
         elif summon_roll <= 64:
-            name += 'Water Elemental, size ', str(random.randint(1, 6)+4)
+            name += 'Water Elemental, size ' + str(random.randint(1, 6)+4)
         elif summon_roll <= 74:
             name += str(random.randint(1, 6)) + ' Skeletons'
         elif summon_roll <= 84:

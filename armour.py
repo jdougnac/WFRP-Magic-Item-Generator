@@ -1,10 +1,10 @@
 import random
 import glove
 import boot
-
+import spell
+import rune
 
 armour_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-
 
 armour_dict = {
     '1': ['Mail Coif', 'For an explanation of the powers, go to the corresponding Apocrypha Now section.', 'AN', '48'],
@@ -145,7 +145,14 @@ def pick_enchantments(amount_enchantments, enchantment_list):
     return object_enchantments
 
 
-def pick_armour(is_rune = False, is_chaos = False):
+def pick_armour():
+    type_of_magic_armour = random.randint(1, 100)
+    if type_of_magic_armour > 88 and type_of_magic_armour < 99:
+        return rune.pick_armour()
+    if type_of_magic_armour == 100:
+        armour = ['0', 'Chaos Armour', 'Gives 5 AP to all locations, as well as +5 T. See manual.', 'TOC', '182']
+        return armour
+
     choice = str(random.choice(armour_list))
     chosen_object = armour_dict[choice]    
     object_id = choice
@@ -316,7 +323,22 @@ def pick_armour(is_rune = False, is_chaos = False):
                     name += 'All psychological effects'
                 name += ')'
             elif power == 'Wizardry':
-                name += '(PENDING!!!!)'    
+                extra_wizardry_effect_chance = random.randint(1, 100)
+                if extra_wizardry_effect_chance <= 75:
+                    pass
+                elif extra_wizardry_effect_chance <= 80:
+                    name += ' (Immunity (' + spell.pick_spell() + '))'
+                elif extra_wizardry_effect_chance <= 85:
+                    name += " (Power: once per day, the wearer can add 1d6 to the total of a spellcasting roll. This" \
+                            " die" \
+                            " doesn't count for Tzeentch's Curse)"
+                elif extra_wizardry_effect_chance <= 90:
+                    name += ' (Power Amplifier: the wearer receives +3 to all their spellcasting rolls)'
+                elif extra_wizardry_effect_chance <= 95:
+                    name += ' (Spell Absorption: see Generator Companion)'
+                elif extra_wizardry_effect_chance <= 100:
+                    storage_amount = random.randint(1, 10)
+                    name += ' (Storage: ' + str(storage_amount) + '. See Generator Companion)'
             name += ', '
 
 # body has a completely different loop, since its configuration allows for powers to repeat themselves,

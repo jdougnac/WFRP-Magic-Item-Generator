@@ -1,5 +1,6 @@
 import random
 import extras
+import chaos
 
 special_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,
                 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54,
@@ -188,7 +189,7 @@ special_dict = {
     '59': ['Skull Charm', 'Grants +10 to Fear checks.', 'ROS2', '207'],
     '60': ['Skull Charm', 'Grants +5 to WS and BS.', 'ROS2', '207'],
     '61': ['Skull Charm', 'Grants +10 to WS, BS, and Fear tests. It also speaks.', 'ROS2', '207'],
-    '62': ['Talisman of Ulrics', 'The wearer of this Talisman regains 1 Wound at the start of their turn each round.',
+    '62': ['Talisman of Ulric', 'The wearer of this Talisman regains 1 Wound at the start of their turn each round.',
            'ROS2', '207'],
     '63': ['The Black Amulet', '50% chance of rebounding damage. See manual.', 'ROS1', '160'],
     '64': ['Golden Eye of Tzeentch', 'All enemies in melee with the wearer must pass WP each round or stay immobile.'
@@ -241,6 +242,10 @@ special_dict = {
 
 
 def pick_special():
+
+    chaos_chance = random.randint(1, 100)
+    if chaos_chance > 95:
+        return chaos.pick_chaos_special()
     choice = str(random.choice(special_list))
     chosen_object = special_dict[choice]
     object_id = choice

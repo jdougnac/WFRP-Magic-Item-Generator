@@ -1,5 +1,5 @@
 import random
-
+import rune
 
 amulet_list = [1, 1, 2, 3, 3, 4, 5, 6, 7, 8, 9]
 
@@ -35,7 +35,10 @@ amulet_dict = {
 # sub-classes or specifics
 # within a given magic item
 
-def pick_amulet(is_rune=False):
+def pick_amulet():
+    item_type = random.randint(1, 100)
+    if item_type > 89:
+        return rune.pick_talisman('Amulet')
     choice = str(random.choice(amulet_list))
     chosen_object = amulet_dict[choice]    
     object_id = choice

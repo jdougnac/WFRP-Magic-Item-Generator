@@ -44,9 +44,8 @@ def pick_wand():
     source = chosen_object[2]
     page = chosen_object[3]
     if object_id == '2':
-        wand_capacity = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6) + random.randint(1,
-                                                                                                            6) + random.randint(
-            1, 6) + random.randint(1, 6)
+        wand_capacity = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6) + \
+                        random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6)
         current_usage = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6)
         if current_usage > wand_capacity:
             current_usage = wand_capacity

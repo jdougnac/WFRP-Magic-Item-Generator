@@ -57,7 +57,7 @@ def pick_bow():
         elif roll == 10:
             name += ', +25 BS'
     elif object_id == '5':
-        bow_properties_roll = random.randint(1, 100)  # TEST
+        bow_properties_roll = random.randint(1, 100)
         if bow_properties_roll <= 50:
             bow_properties = 0
         elif bow_properties_roll <= 75:

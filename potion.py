@@ -1,5 +1,6 @@
 import random
 import spell
+import chaos
 
 potion_list = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19',
                '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36',
@@ -214,6 +215,9 @@ potion_dict = {
 
 
 def pick_potion():
+    chaos_potion_chance = random.randint(1, 100)
+    if chaos_potion_chance > 95:
+        return chaos.pick_potion_chaos()
     choice = str(random.choice(potion_list))
     chosen_object = potion_dict[choice]
     object_id = choice
@@ -366,4 +370,3 @@ def pick_potion():
 
     final_object = [object_id, name, description, source, page]
     return final_object
-
